@@ -9,34 +9,45 @@
 </head>
 
 <body>
-    <form method="GET">
-        First Name: <input type="text" name="firstname" required><br>
-        Last Name: <input type="text" name="lastname" required><br>
-        Email: <input type="email" name="email" required><br>
-        Company Name: <input type="text" name="company"><br>
 
-        <p>Reason For Contact:</p>
-        <input type="radio" name="reason" value="Project"> Project<br>
-        <input type="radio" name="reason" value="Thesis"> Thesis<br>
-        <input type="radio" name="reason" value="Job"> Job<br>
+    <div class="container">
 
-        <p>Choose a service:</p>
-        <select name="service">
-            <option value="Research">Research</option>
-            <option value="Programming">Programming</option>
-            <option value="Custom Solution Implementation">Custom Solution Implementation</option>
-        </select><br>
+        <h1>Contact Me</h1>
 
-        <p>3 Services you provide:</p>
-        <input type="checkbox" name="services[]" value="Research"> Research<br>
-        <input type="checkbox" name="services[]" value="Programming"> Programming<br>
-        <input type="checkbox" name="services[]" value="Custom Solution Implementation"> Custom Solution
-        Implementation<br>
+        <form method="GET">
+            First Name: <input type="text" name="firstname" required><br>
+            Last Name: <input type="text" name="lastname" required><br>
+            Email: <input type="email" name="email" required><br>
+            Company Name: <input type="text" name="company"><br>
 
-        <br>
-        <input type="submit" value="Register">
-        <input type="reset" value="Reset">
-    </form>
+            <p>Reason For Contact:</p>
+            <input type="radio" name="reason" value="Project"> Project<br>
+            <input type="radio" name="reason" value="Thesis"> Thesis<br>
+            <input type="radio" name="reason" value="Job"> Job<br>
+
+            <p>Choose a service:</p>
+            <select name="service">
+                <option value="Research">Research</option>
+                <option value="Programming">Programming</option>
+                <option value="Custom Solution Implementation">Custom Solution Implementation</option>
+            </select><br>
+
+            <p>3 Services you provide:</p>
+            <input type="checkbox" name="services[]" value="Research"> Research<br>
+            <input type="checkbox" name="services[]" value="Programming"> Programming<br>
+            <input type="checkbox" name="services[]" value="Custom Solution Implementation"> Custom Solution
+            Implementation<br><br>
+
+            <label>Book an Appointment (Date):</label>
+            <input type="date" name="appointment_date" required><br>
+
+            <br>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+
+    </div>
+
 </body>
 
 </html>

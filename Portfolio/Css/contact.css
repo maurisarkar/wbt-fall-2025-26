@@ -1,3 +1,37 @@
 body {
     background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Center the whole form */
+.container {
+    background-color: rgb(230, 220, 173);
+    width: 450px;
+    margin: 40px auto;
+}
+
+/* Every row on one line */
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Label + input on the same row */
+.row {
+    margin-bottom: 12px;
+}
+
+.row label {
+    display: inline-block;
+    width: 150px;
+    /* controls alignment */
+    font-size: 16px;
+}
+
+.row input,
+.row select {
+    width: 200px;
+    padding: 6px;
 }
